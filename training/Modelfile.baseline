@@ -1,0 +1,4 @@
+# An untrained model with a context big enough for timetables:  ollama create timetable-baseline -f Modelfile.baseline
+FROM qwen2.5:7b
+PARAMETER num_ctx 32768
+PARAMETER temperature 0

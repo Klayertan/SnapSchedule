@@ -1,0 +1,5 @@
+# Used when GGUF export failed on the training machine and you copied the `merged` folder instead:
+#   ollama create snapschedule -f Modelfile.merged --quantize q4_K_M
+FROM ./merged
+PARAMETER num_ctx 32768
+PARAMETER temperature 0

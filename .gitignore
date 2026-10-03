@@ -1,0 +1,13 @@
+.DS_Store
+xcuserdata/
+DerivedData/
+build/
+__pycache__/
+training/out/
+training/data/train.jsonl
+training/*.gguf
+training/merged/
+# The real school timetable stays off the public repo; copy these between machines yourself.
+training/data/real_nara_layout.txt
+training/data/real_test.jsonl
+training/make_real_test.py

@@ -1,0 +1,5 @@
+# Ollama recipe for the fine-tuned model. On the Mac:  ollama create snapschedule -f Modelfile
+FROM ./model.gguf
+# Timetables are long; Ollama's default context is far too small for them.
+PARAMETER num_ctx 32768
+PARAMETER temperature 0
